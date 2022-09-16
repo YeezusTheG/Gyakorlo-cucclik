@@ -13,11 +13,11 @@ print(encryptedcode)
 
 abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 code = input("Adjal man meg textet: ")
-decritionkey = int(input("Adjá kulcsot:  "))
+decryptionkey = int(input("Adjá kulcsot:  "))
 decryptedcode = ''
 for i in code:
     if i.upper() in abc:
         index = abc.index(i.upper())
-        decryptedcode = decryptedcode + abc[index - encryptionkey]
+        decryptedcode = decryptedcode + abc[index - decryptionkey]
 
 print(decryptedcode)
