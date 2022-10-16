@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    long int num, count, sum = 1;
+    unsigned long int num, count, sum = 1;
 
     printf("Enter a positive integer: ");
     scanf("%li", &num);
