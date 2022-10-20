@@ -1,17 +1,22 @@
-abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+abc = "AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ"
 kódolnivaló = open("open.txt", "r")
-eltolás = int(input("Adjá kulcsot:  "))
-kódoltcuccli = ''
+kész_kód = ''
+while True:
+    eltolás_számérték = int(input("Adjá kulcsot:  "))
+    if eltolás_számérték < len(abc):
+        break
+    else:
+        print("Hibás érték, maximum 34")
 for i in kódolnivaló.read():
     if i.upper() not in abc:
-        kódoltcuccli += i
+        kész_kód += i
     else:
-        eltolósdi = abc.index(i.upper()) + eltolás
-        if eltolósdi > len(abc):
-            eltolósdi = len(abc)-(abc.index(i.upper()) + eltolás)
+        eltolási_index_az_ABCben = abc.index(i.upper()) + eltolás_számérték
+        if eltolási_index_az_ABCben > len(abc):
+            eltolási_index_az_ABCben = len(abc)-(abc.index(i.upper()) + eltolás_számérték)
         else:
-            eltolósdi = abc.index(i.upper()) + eltolás
-        kódoltcuccli += abc[eltolósdi]
+            eltolási_index_az_ABCben = abc.index(i.upper()) + eltolás_számérték
+        kész_kód += abc[eltolási_index_az_ABCben]
 
 kódolnivaló = open("open.txt", "a")
-kódolnivaló.write("\n" + kódoltcuccli)
+kódolnivaló.write("\n" + kész_kód)

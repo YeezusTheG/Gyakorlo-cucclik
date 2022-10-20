@@ -18,5 +18,12 @@ int main()
         printf("%d\n",i);
         ++i;/* code */
     }
+    int j = 1;
+    do
+    {
+        printf("%d\n",j);
+        ++j;
+    } while (j<=10);
+    
     return 0;
 }
