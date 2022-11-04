@@ -17,8 +17,19 @@ while i <= hetekszama:
         j+=1
     i+=1
 #3.feladat
+print(támadások)
+i = 1
+while i <= hetekszama:
+    print(f"{i}.hét", end=" ")
+    k = 7
+    j = k*(i-1)
+    for o in range(7):
+        print(támadások[j+o], end=" ")
+    print()
+    i+=1
 
 #4.feladat
+
 s = 0
 for i in támadások:
     s = s + támadások[i]
