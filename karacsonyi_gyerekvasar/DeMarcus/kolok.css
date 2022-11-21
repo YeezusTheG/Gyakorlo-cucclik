@@ -1,0 +1,16 @@
+nav{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    font-size: larger;
+}
+a:link{
+    text-decoration: none;
+}
+a,a:visited{
+    color: black;
+    
+}
+#DeMarcus{
+    float: left;
+}
