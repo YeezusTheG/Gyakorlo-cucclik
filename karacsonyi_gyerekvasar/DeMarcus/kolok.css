@@ -15,5 +15,5 @@ a,a:visited{
     float: left;
 }
 #leárazás{
-    fon
+    text-decoration: line-through;
 }
