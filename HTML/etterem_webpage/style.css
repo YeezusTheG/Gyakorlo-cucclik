@@ -1,0 +1,22 @@
+*{
+    background-color: #534c4c;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    text-align: center;
+    font-size: large;
+}
+.navelemei, .navelemei:hover{
+    color: black;
+}
+.navelemei:hover{
+    color: green;
+    transition-duration: 0.2s;
+}
+#csik{
+    background-color: #8c7f7f;
+    color: #8c7f7f;
+    text-align: center;
+}
