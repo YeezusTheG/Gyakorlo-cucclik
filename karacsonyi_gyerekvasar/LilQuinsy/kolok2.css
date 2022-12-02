@@ -17,3 +17,10 @@ a,a:visited{
 #learazas{
     text-decoration: line-through;
 }
+a {
+    transition-duration: 200ms;
+}
+.navbar:hover{
+    background-color: #d5c8c8;
+
+}
