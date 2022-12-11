@@ -1,5 +1,5 @@
 abc = "AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ"
-kódolnivaló = open("open.txt", "r")
+kódolnivaló = open("labda.txt", "r")
 kész_kód = ''
 while True:
     eltolás_számérték = int(input("Adjá kulcsot:  "))
@@ -18,5 +18,5 @@ for i in kódolnivaló.read():
             eltolási_index_az_ABCben = abc.index(i.upper()) + eltolás_számérték
         kész_kód += abc[eltolási_index_az_ABCben]
 
-kódolnivaló = open("open.txt", "a")
+kódolnivaló = open("labda.txt", "a")
 kódolnivaló.write("\n" + kész_kód)
