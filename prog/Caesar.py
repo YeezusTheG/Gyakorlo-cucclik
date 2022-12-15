@@ -1,5 +1,7 @@
+with open("text.txt") as f:
+    lines = f.readlines()
 abc = "AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ"
-kódolnivaló = open("labda.txt", "r")
+kódolnivaló = open("text.txt", "r")
 kész_kód = ''
 while True:
     eltolás_számérték = int(input("Adjá kulcsot:  "))
@@ -7,6 +9,8 @@ while True:
         break
     else:
         print("Hibás érték, maximum 34")
+if len(lines) > 1:
+    print("A kódolni való üzenetnek több sora van, kérlek egysoros üzenetet adj meg.")
 for i in kódolnivaló.read():
     if i.upper() not in abc:
         kész_kód += i
@@ -18,5 +22,5 @@ for i in kódolnivaló.read():
             eltolási_index_az_ABCben = abc.index(i.upper()) + eltolás_számérték
         kész_kód += abc[eltolási_index_az_ABCben]
 
-kódolnivaló = open("labda.txt", "a")
+kódolnivaló = open("text.txt", "a")
 kódolnivaló.write("\n" + kész_kód)
